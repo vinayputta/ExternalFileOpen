@@ -73,7 +73,7 @@
 	        rect = CGRectMake(posX, posY, width, height);
 	    }
 	} else {
-		rect = cont.view.frame;
+	        rect = CGRectMake(0, 0, 1500.0f, 50.0f);
 	}
 
     if([self.docController presentOpenInMenuFromRect:rect inView:cont.view animated:YES]) {
