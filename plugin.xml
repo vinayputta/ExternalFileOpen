@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-	id="ExternalFileOpen" version="0.0.4">
+	id="com.apache.cordova.ExternalFileOpen" version="0.0.4">
 	<name>ExternalFileOpen</name>
 	<description>ExternalFileOpen is for open file with external app Plugin</description>
 	<license>Apache 2.0</license>
