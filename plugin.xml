@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-	id="com.fgomiero.cordova.externafileutil" version="0.0.4">
+	id="ExternalFileOpen" version="0.0.4">
 	<name>ExternalFileOpen</name>
-	<description>FGomiero open file with external app Plugin</description>
+	<description>ExternalFileOpen is for open file with external app Plugin</description>
 	<license>Apache 2.0</license>
 	<keywords>cordova,open,file,external</keywords>
 	<js-module src="ExternalFileOpen.js" name="ExternalFileOpen">
