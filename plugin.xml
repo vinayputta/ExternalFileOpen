@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	id="com.fgomiero.cordova.externafileutil" version="0.0.4">
+	<name>ExternalFileOpen</name>
+	<description>FGomiero open file with external app Plugin</description>
+	<license>Apache 2.0</license>
+	<keywords>cordova,open,file,external</keywords>
+	<js-module src="ExternalFileOpen.js" name="ExternalFileOpen">
+		<clobbers target="ExternalFileOpen" />
+	</js-module>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+	<!-- ios -->
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="ExternalFileOpen">
+				<param name="ios-package" value="VFExternalFileOpen"/>
+			</feature>
+		</config-file>
+    
+		<header-file src="VFExternalFileOpen.h" />
+		<source-file src="VFExternalFileOpen.m" />
+	</platform>
+
+</plugin>
