@@ -79,8 +79,7 @@
     if([self.docController presentOpenInMenuFromRect:rect inView:cont.view animated:YES]) {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];	
     } else {
-        NSLog(@"Nessuna app trovata per aprire il documento %@", localFile);
-		pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"No app found"];
+	pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"No app found"];
     }
 
 	[self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
