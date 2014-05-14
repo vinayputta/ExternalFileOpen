@@ -79,6 +79,12 @@
     if([self.docController presentOpenInMenuFromRect:rect inView:cont.view animated:YES]) {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];	
     } else {
+    	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No app found" 
+                                                message:@"No application found on the device that can open the attached file.  Please download a compatible application from the app store and try again." 
+                                               delegate:nil 
+                                      cancelButtonTitle:@"OK"
+                                      otherButtonTitles:nil];
+	[alert show];
 	pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"No app found"];
     }
 
